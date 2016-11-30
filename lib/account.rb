@@ -16,9 +16,9 @@ class Account
     add_transactions(date, amount, type=:credit)
   end
 
+
   private
     def add_transactions(date, amount, type)
       @transactions.push({ date: date, amount: amount, balance: balance, type: type})
     end
-
 end
